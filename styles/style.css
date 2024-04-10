@@ -1,0 +1,93 @@
+body {
+  background-image: url("../images/background/background.png");
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #ffffff;
+  font-family: "Rammetto One";
+  font-size: 22px;
+}
+
+#start-screen {
+  display: block;
+}
+
+#pre-game-screen {
+  display: none;
+}
+
+#game-screen {
+  display: none;
+}
+
+#end-screen {
+  display: none;
+}
+
+.main-waldo {
+  width: 35%;
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+}
+
+.speech-bubble-container {
+  position: absolute; /* Position the bubble absolutely within its relative parent */
+  top: 30%; /* Adjust this value to move the bubble up or down */
+  left: 50%; /* Start at 50% from the left */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center the bubble horizontally and move it up */
+  width: 60vw; /* Relative to the width of the viewport */
+  height: 60vh; /* Relative to the height of the viewport */
+  background-image: url("/images/waldo/speechbubble.png");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speech-bubble-text {
+  padding: 10em 11em 12em; /* Add some padding inside the bubble */
+  text-align: center; /* Center the text horizontally */
+  font-size: calc(1vw + 1vh); /* Adjust the size based on the viewport */
+  color: #000; /* Set the text color */
+}
+
+.start-game-container {
+  position: absolute; /* Position the container absolutely within its relative parent */
+  bottom: 60px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  width: 40%; /* Relative to the parent's width */
+  font-size: calc(1.2vw + 1.2vh);
+}
+
+input[type="text"] {
+  width: 40%; /* Width of the input field */
+  padding: 10px; /* Space inside the input field */
+  margin: 10px 10px; /* Spacing around the input field */
+  border: 1px solid #ccc; /* Border color and width */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #f8f8f8; /* Background color */
+  font-size: calc(0.6vw + 0.6vh); /* Text size */
+  font-family: "Rammetto One";
+  color: #18af7d; /* Text color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: adds shadow */
+  outline: none; /* Removes the default focus highlight */
+}
+
+#start-button {
+  /* Style your start game button */
+  padding: 10px 70px; /* Add padding to increase the size of the button */
+  font-size: calc(1vw + 1vh); /* Adjust the font size */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+  font-family: "Rammetto One";
+  background-color: #721ef3;
+  color: white;
+  border: #ffffff solid;
+  border-radius: 10px;
+}

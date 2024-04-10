@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rammetto One"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Island Racer</title>
+  </head>
+  <body>
+    <main>
+      <div id="start-screen">
+        <img
+          src="/images/waldo/waldo-transparent.png"
+          alt=""
+          class="main-waldo"
+        />
+        <div class="speech-bubble-container">
+          <div class="speech-bubble-text">
+            Hi my friend! Good to meet you, I'm Prickly. Prickly Waldo. Click
+            "Start Game" and try to find me!
+          </div>
+        </div>
+        <div class="start-game-container">
+          <p class="start-p">First, Enter Your Names!</p>
+
+          <label for="player1name">Name Player 1:</label>
+          <input type="text" id="player1name" name="player1name" /><br />
+          <label for="player2name">Name Player 2:</label>
+          <input type="text" id="player2name" name="player2name" /><br /><br />
+          <button id="start-button">Start Game!</button>
+        </div>
+      </div>
+
+      <div id="pre-game-screen">
+        <div class="current-round-container">
+          <div class="current-round">Round $1</div>
+        </div>
+        <h2>player1Name's turn!</h2>
+        <div>
+          <p class="between-screen-p">
+            Okay $player1Name, now it's time to focus. Try to find
+            <img src="#" alt="" class="small-waldo" /> as fast as you can and
+            click it.
+          </p>
+        </div>
+        <div class="current-time resultview">
+          <p>$player1Name's Timer: $timer.</p>
+          <p>$player2Name's Timer: $timer</p>
+        </div>
+      </div>
+
+      <div id="game-screen">
+        <div class="current-time gameview">
+          <p>$player1Name's Timer: $timer.</p>
+          <p>$player2Name's Timer: $timer</p>
+        </div>
+        <div>
+          <img src="#" alt="" class="search-picture" />
+          <img src="#" alt="" class="game-waldo" />
+        </div>
+      </div>
+
+      <div id="end-screen">
+        <h3>$player1Name's won!</h3>
+        <img src="#crown" alt="" class="main-waldo" />
+        <div class="speech-bubble-container">
+          <div class="speech-bubble-text">
+            WOW!!<br />It only took $player1Name <br /><span>$timer</span><br />
+            minutes to find all 5 Prickly Waldos.
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="js/waldo.js"></script>
+  </body>
+</html>
