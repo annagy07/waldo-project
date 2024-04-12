@@ -74,7 +74,7 @@ class Game {
     clearInterval(this.currentTimer);
   }
 
-  /************  GAME LOGIC  ************/
+  /************  GAME FLOW  ************/
 
   showPreStart(player) {
     this.startScreen.style.display = "none";
@@ -90,7 +90,7 @@ class Game {
     if (this.roundIndex === 1) {
       betweenScreenPElement.textContent = `Hi ${player.name}, great to meet you! Your task is to try to find Prickly Waldo on the picture. But look out, he will be hiding like a pro :)`;
     } else if (this.roundIndex > 1 && this.roundIndex < 5) {
-      betweenScreenPElement.textContent = `Nice job ${player.name}! You keep on searching and Prickly Waldo keeps on hiding!`;
+      betweenScreenPElement.textContent = `Nice job so far ${player.name}! You keep on searching and Prickly Waldo keeps on hiding!`;
     } else {
       betweenScreenPElement.textContent = `This is the last round and last chance to keep up with your friend!`;
     }

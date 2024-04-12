@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- HEAD Section -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,14 +9,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
-    <title>Island Racer</title>
+    <title>Prickly Waldo</title>
   </head>
+  <!-- BODY Section -->
   <body>
     <main>
+      <!-- START SCREEN -->
       <div id="start-screen">
         <img
           src="/images/waldo/waldo-transparent.png"
-          alt=""
+          alt="prickly waldo"
           class="main-waldo"
         />
         <div class="speech-bubble-container">
@@ -35,7 +38,7 @@
           <button id="start-button">Start Game!</button>
         </div>
       </div>
-
+      <!-- PRE-GAME SCREEN -->
       <div id="pre-game-screen">
         <div class="current-round-container">
           <div id="current-round">Round $1</div>
@@ -45,10 +48,6 @@
           <p id="between-screen-p"></p>
         </div>
         <button id="start-playing-button">Go!</button>
-        <div class="current-time resultview">
-          <p></p>
-          <p></p>
-        </div>
         <iframe
           src="https://giphy.com/embed/bxRuoWEJG7mso"
           width="480"
@@ -58,9 +57,9 @@
           allowfullscreen
         ></iframe>
       </div>
-
+      <!-- GAME SCREEN -->
       <div id="game-screen">
-        <div class="current-time gameview">
+        <div class="game-timer">
           <p id="player1-timer" class="timerview"></p>
           <p id="player2-timer" class="timerview"></p>
         </div>
@@ -71,25 +70,24 @@
           </div>
         </div>
       </div>
-
+      <!-- END SCREEN -->
       <div id="end-screen">
         <div id="end-container">
           <h3 id="win-announcment">$player1Name's won!</h3>
           <button id="restart-game">Play again!</button>
         </div>
-        <img src="./images/waldo/win-waldo.png" alt="" class="main-waldo" />
+        <img
+          src="./images/waldo/win-waldo.png"
+          alt="waldo with crown"
+          class="main-waldo"
+        />
         <div class="speech-bubble-container">
-          <div class="speech-bubble-text">
-            WOW!!<br />It only took $player1Name <br /><span>$timer</span><br />
-            minutes to find all 5 Prickly Waldos.
-          </div>
+          <div class="speech-bubble-text"></div>
         </div>
       </div>
     </main>
-
+    <!-- JS Files -->
     <script type="text/javascript" src="js/game.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/player.js"></script>
-    <script type="text/javascript" src="js/waldo.js"></script>
   </body>
 </html>

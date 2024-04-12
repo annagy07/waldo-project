@@ -9,6 +9,8 @@ body {
   font-size: 22px;
 }
 
+/********** SCREENS **********/
+
 #start-screen {
   display: block;
 }
@@ -28,6 +30,8 @@ body {
 #end-screen {
   display: none;
 }
+
+/********** START SCREEN **********/
 
 .main-waldo {
   width: 35%;
@@ -84,85 +88,7 @@ input[type="text"] {
   outline: none; /* Removes the default focus highlight */
 }
 
-#start-button {
-  /* Style your start game button */
-  padding: 10px 70px; /* Add padding to increase the size of the button */
-  font-size: calc(1vw + 1vh); /* Adjust the font size */
-  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
-  font-family: "Rammetto One";
-  background-color: #721ef3;
-  color: white;
-  border: #ffffff solid;
-  border-radius: 10px;
-}
-
-#search-image-container {
-  position: relative; /* or 'fixed' if you want it to stay in place on scroll */
-  right: 0; /* Align to the right of the viewport */
-  top: 0;
-  height: 100%;
-  width: 54%; /* Take up half the width of the viewport */
-  float: right;
-}
-
-.search-picture {
-  position: relative;
-  height: 100%;
-  max-width: 100%;
-}
-
-.game-waldo {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.gameview {
-  position: absolute;
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 3%;
-}
-
-#end-container {
-  position: absolute; /* Position the container absolutely within its relative parent */
-  bottom: 60px; /* Adjust as needed */
-  right: 20px; /* Adjust as needed */
-  width: 40%; /* Relative to the parent's width */
-  font-size: calc(1.2vw + 1.2vh);
-  display: block;
-  text-align: center;
-}
-
-#win-announcment {
-  font-size: 6vh;
-}
-
-#restart-game {
-  font-size: calc(1vw + 1vh); /* Adjust the font size */
-  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
-  font-family: "Rammetto One";
-  background-color: #721ef3;
-  color: white;
-  border: #ffffff solid;
-  border-radius: 10px;
-  padding: 10px 80px;
-  margin-bottom: 40px;
-}
-
-#start-playing-button {
-  font-size: calc(1vw + 1vh); /* Adjust the font size */
-  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
-  font-family: "Rammetto One";
-  background-color: #721ef3;
-  color: white;
-  border: #ffffff solid;
-  border-radius: 10px;
-  padding: 10px 80px;
-  margin-top: 40px;
-}
+/********** PRE-GAME SCREEN **********/
 
 .giphy-embed {
   margin-top: 55px;
@@ -183,23 +109,108 @@ input[type="text"] {
   padding: 0 120px;
 }
 
+#current-round {
+  color: #ffffff;
+}
+
+#search-image-container {
+  position: relative; /* or 'fixed' if you want it to stay in place on scroll */
+  right: 0; /* Align to the right of the viewport */
+  top: 0;
+  height: 100%;
+  width: 54%; /* Take up half the width of the viewport */
+  float: right;
+}
+
+/********** GAME SCREEN **********/
+
+.search-picture {
+  position: relative;
+  height: 100%;
+  max-width: 100%;
+}
+
+.game-waldo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.game-timer {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3%;
+}
+
 .timerview {
   font-size: 3vh;
 }
 
-#current-round {
-  color: #ffffff;
+/********** END SCREEN **********/
 
+#end-container {
+  position: absolute; /* Position the container absolutely within its relative parent */
+  bottom: 60px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  width: 40%; /* Relative to the parent's width */
+  font-size: calc(1.2vw + 1.2vh);
+  display: block;
+  text-align: center;
+}
+
+#win-announcment {
+  font-size: 6vh;
+}
+
+/********** BUTTON STYLES **********/
+
+#start-playing-button {
+  font-size: calc(1vw + 1vh); /* Adjust the font size */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+  font-family: "Rammetto One";
+  background-color: #721ef3;
+  color: white;
+  border: #ffffff solid;
+  border-radius: 10px;
+  padding: 10px 80px;
+  margin-top: 40px;
 }
 
 #start-playing-button:hover {
-  background-color: #b08af8; /* change to your desired color */
+  background-color: #b08af8;
+}
+
+#restart-game {
+  font-size: calc(1vw + 1vh); /* Adjust the font size */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+  font-family: "Rammetto One";
+  background-color: #721ef3;
+  color: white;
+  border: #ffffff solid;
+  border-radius: 10px;
+  padding: 10px 80px;
+  margin-bottom: 40px;
 }
 
 #restart-game:hover {
-  background-color: #b08af8; /* change to your desired color */
+  background-color: #b08af8;
+}
+
+#start-button {
+  /* Style your start game button */
+  padding: 10px 70px; /* Add padding to increase the size of the button */
+  font-size: calc(1vw + 1vh); /* Adjust the font size */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+  font-family: "Rammetto One";
+  background-color: #721ef3;
+  color: white;
+  border: #ffffff solid;
+  border-radius: 10px;
 }
 
 #start-button:hover {
-  background-color: #b08af8; /* change to your desired color */
+  background-color: #b08af8;
 }
