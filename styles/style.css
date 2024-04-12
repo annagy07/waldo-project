@@ -91,3 +91,33 @@ input[type="text"] {
   border: #ffffff solid;
   border-radius: 10px;
 }
+
+#search-image-container {
+  position: relative; /* or 'fixed' if you want it to stay in place on scroll */
+  right: 0; /* Align to the right of the viewport */
+  top: 0;
+  height: 100%;
+  width: 54%; /* Take up half the width of the viewport */
+  float: right;
+}
+
+.search-picture {
+  position: relative;
+  height: 100%;
+  max-width: 100%;
+}
+
+.game-waldo {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.gameview {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3%;
+}

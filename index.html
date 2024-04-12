@@ -24,6 +24,7 @@
             "Start Game" and try to find me!
           </div>
         </div>
+
         <div class="start-game-container">
           <p class="start-p">First, Enter Your Names!</p>
 
@@ -39,28 +40,31 @@
         <div class="current-round-container">
           <div class="current-round">Round $1</div>
         </div>
-        <h2>player1Name's turn!</h2>
+        <h2 id = "turn-annoucement">player1Name's turn!</h2>
         <div>
-          <p class="between-screen-p">
+          <p id="between-screen-p">
             Okay $player1Name, now it's time to focus. Try to find
             <img src="#" alt="" class="small-waldo" /> as fast as you can and
             click it.
           </p>
         </div>
+        <button id="start-playing-button">Go!</button>
         <div class="current-time resultview">
-          <p>$player1Name's Timer: $timer.</p>
-          <p>$player2Name's Timer: $timer</p>
+          <p></p>
+          <p></p>
         </div>
       </div>
 
       <div id="game-screen">
         <div class="current-time gameview">
-          <p>$player1Name's Timer: $timer.</p>
-          <p>$player2Name's Timer: $timer</p>
+          <p id="player1-timer"></p>
+          <p id="player2-timer"></p>
         </div>
         <div>
-          <img src="#" alt="" class="search-picture" />
-          <img src="#" alt="" class="game-waldo" />
+          <div id="search-image-container">
+            <img src="#" alt="" class="search-picture" />
+            <img src="#" alt="" class="game-waldo" />
+          </div>
         </div>
       </div>
 
@@ -76,6 +80,9 @@
       </div>
     </main>
 
+    <script type="text/javascript" src="js/game.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
     <script type="text/javascript" src="js/waldo.js"></script>
   </body>
 </html>
