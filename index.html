@@ -38,27 +38,31 @@
 
       <div id="pre-game-screen">
         <div class="current-round-container">
-          <div class="current-round">Round $1</div>
+          <div id="current-round">Round $1</div>
         </div>
-        <h2 id = "turn-annoucement">player1Name's turn!</h2>
+        <h2 id="turn-annoucement">player1Name's turn!</h2>
         <div>
-          <p id="between-screen-p">
-            Okay $player1Name, now it's time to focus. Try to find
-            <img src="#" alt="" class="small-waldo" /> as fast as you can and
-            click it.
-          </p>
+          <p id="between-screen-p"></p>
         </div>
         <button id="start-playing-button">Go!</button>
         <div class="current-time resultview">
           <p></p>
           <p></p>
         </div>
+        <iframe
+          src="https://giphy.com/embed/bxRuoWEJG7mso"
+          width="480"
+          height="auto"
+          frameborder="0"
+          class="giphy-embed"
+          allowfullscreen
+        ></iframe>
       </div>
 
       <div id="game-screen">
         <div class="current-time gameview">
-          <p id="player1-timer"></p>
-          <p id="player2-timer"></p>
+          <p id="player1-timer" class="timerview"></p>
+          <p id="player2-timer" class="timerview"></p>
         </div>
         <div>
           <div id="search-image-container">
@@ -69,8 +73,11 @@
       </div>
 
       <div id="end-screen">
-        <h3>$player1Name's won!</h3>
-        <img src="#crown" alt="" class="main-waldo" />
+        <div id="end-container">
+          <h3 id="win-announcment">$player1Name's won!</h3>
+          <button id="restart-game">Play again!</button>
+        </div>
+        <img src="./images/waldo/win-waldo.png" alt="" class="main-waldo" />
         <div class="speech-bubble-container">
           <div class="speech-bubble-text">
             WOW!!<br />It only took $player1Name <br /><span>$timer</span><br />
