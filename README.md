@@ -2,15 +2,15 @@
 
 ## Description
 
-_Prickly Waldo_ is a fun, interactive game for two players, inspired by the classic game "Where's Waldo?". In this version, players are tasked with finding not Waldo, but a well-hidden hedgehog named Prickly Waldo. Each player takes turns to locate Prickly Waldo as quickly as possible within a variety of images. The game spans 5 rounds, and each player's time is recorded — the player who spots Prickly Waldo fastest wins!
+_Prickly Waldo_ is a fun, interactive game for two players, inspired by the classic game "Where's Waldo?". In this version, players are tasked with finding not Waldo, but a well-hidden hedgehog named Prickly Waldo. Each player takes turns to locate Prickly Waldo as quickly as possible within a variety of images. The game spans 4 rounds, and each player's time is recorded — the player who spots Prickly Waldo fastest wins!
 
 ## Game Logic
 
-- The game consists of **5 rounds**.
+- The game consists of **4 rounds**.
 - In each round, both players (one after another) have the chance to find Prickly Waldo in an image.
 - Each player has their own timer, which stops when they click on Prickly Waldo.
 - The timer pauses for the inactive player and resumes from where it left off when it's their turn again.
-- After 5 rounds, the player with the lowest overall time is declared the winner.
+- After 4 rounds, the player with the lowest overall time is declared the winner.
 
 ## JavaScript Overview
 

@@ -18,7 +18,7 @@ class Game {
       "./images/search-img/street-waldo.jpg",
     ];
     this.roundIndex = 1;
-    this.roundsTotal = 4;
+    this.roundsTotal = 3;
 
     // Set up the UI elements
     this.setupUI();
@@ -89,7 +89,7 @@ class Game {
 
     if (this.roundIndex === 1) {
       betweenScreenPElement.textContent = `Hi ${player.name}, great to meet you! Your task is to try to find Prickly Waldo on the picture. But look out, he will be hiding like a pro :)`;
-    } else if (this.roundIndex > 1 && this.roundIndex < 4) {
+    } else if (this.roundIndex > 1 && this.roundIndex < 3) {
       betweenScreenPElement.textContent = `Nice job so far ${player.name}! You keep on searching and Prickly Waldo keeps on hiding!`;
     } else {
       betweenScreenPElement.textContent = `This is the last round and last chance to keep up with your friend!`;
