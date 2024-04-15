@@ -48,9 +48,9 @@ body {
     -50%,
     -50%
   ); /* Center the bubble horizontally and move it up */
-  width: 60vw; /* Relative to the width of the viewport */
-  height: 60vh; /* Relative to the height of the viewport */
-  background-image: url("/images/waldo/speechbubble.png");
+  width: 60vw;
+  height: 60vh;
+  background-image: url("/./images/waldo/speechbubble.png");
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
@@ -60,30 +60,30 @@ body {
 }
 
 .speech-bubble-text {
-  padding: 10em 11em 12em; /* Add some padding inside the bubble */
-  text-align: center; /* Center the text horizontally */
+  padding: 10em 11em 12em;
+  text-align: center;
   font-size: calc(1vw + 1vh); /* Adjust the size based on the viewport */
-  color: #000; /* Set the text color */
+  color: #000;
 }
 
 .start-game-container {
-  position: absolute; /* Position the container absolutely within its relative parent */
-  bottom: 60px; /* Adjust as needed */
-  right: 20px; /* Adjust as needed */
-  width: 40%; /* Relative to the parent's width */
+  position: absolute;
+  bottom: 60px;
+  right: 20px;
+  width: 40%;
   font-size: calc(1.2vw + 1.2vh);
 }
 
 input[type="text"] {
-  width: 40%; /* Width of the input field */
-  padding: 10px; /* Space inside the input field */
-  margin: 10px 10px; /* Spacing around the input field */
-  border: 1px solid #ccc; /* Border color and width */
-  border-radius: 4px; /* Rounded corners */
-  background-color: #f8f8f8; /* Background color */
-  font-size: calc(0.6vw + 0.6vh); /* Text size */
+  width: 40%;
+  padding: 10px;
+  margin: 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: calc(0.6vw + 0.6vh);
   font-family: "Rammetto One";
-  color: #18af7d; /* Text color */
+  color: #18af7d;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional: adds shadow */
   outline: none; /* Removes the default focus highlight */
 }
@@ -114,11 +114,11 @@ input[type="text"] {
 }
 
 #search-image-container {
-  position: relative; /* or 'fixed' if you want it to stay in place on scroll */
-  right: 0; /* Align to the right of the viewport */
+  position: relative;
+  right: 0;
   top: 0;
   height: 100%;
-  width: 54%; /* Take up half the width of the viewport */
+  width: 54%;
   float: right;
 }
 
@@ -152,10 +152,10 @@ input[type="text"] {
 /********** END SCREEN **********/
 
 #end-container {
-  position: absolute; /* Position the container absolutely within its relative parent */
-  bottom: 60px; /* Adjust as needed */
-  right: 20px; /* Adjust as needed */
-  width: 40%; /* Relative to the parent's width */
+  position: absolute;
+  bottom: 60px;
+  right: 20px;
+  width: 40%;
   font-size: calc(1.2vw + 1.2vh);
   display: block;
   text-align: center;
@@ -168,8 +168,8 @@ input[type="text"] {
 /********** BUTTON STYLES **********/
 
 #start-playing-button {
-  font-size: calc(1vw + 1vh); /* Adjust the font size */
-  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+  font-size: calc(1vw + 1vh);
+  cursor: pointer;
   font-family: "Rammetto One";
   background-color: #721ef3;
   color: white;
@@ -184,7 +184,7 @@ input[type="text"] {
 }
 
 #restart-game {
-  font-size: calc(1vw + 1vh); /* Adjust the font size */
+  font-size: calc(1vw + 1vh);
   cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
   font-family: "Rammetto One";
   background-color: #721ef3;
@@ -200,10 +200,9 @@ input[type="text"] {
 }
 
 #start-button {
-  /* Style your start game button */
-  padding: 10px 70px; /* Add padding to increase the size of the button */
-  font-size: calc(1vw + 1vh); /* Adjust the font size */
-  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+  padding: 10px 70px;
+  font-size: calc(1vw + 1vh);
+  cursor: pointer;
   font-family: "Rammetto One";
   background-color: #721ef3;
   color: white;
