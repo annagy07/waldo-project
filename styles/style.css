@@ -50,7 +50,7 @@ body {
   ); /* Center the bubble horizontally and move it up */
   width: 60vw;
   height: 60vh;
-  background-image: url("/./images/waldo/speechbubble.png");
+  background-image: url("../images/waldo/speechbubble.png");
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
